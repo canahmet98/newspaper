@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+    
+
+<h1>New Article</h1>
+    <form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+        <button class="btn btn-success ml-2" type="submit">Save</button>
+    </form>
+        {% else %}
+        Wrong page, you are not aloud here.
+    {% endif %}
+{% endblock %}

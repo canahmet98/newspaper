@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+ <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Welcome NewsPaper App</h1>
+        <p class="col-md-8 fs-4">İf you want to read articles or write one
+            you are in the correct place.
+        </p>
+          <a href="{% url 'article_list' %}" class="btn btn-primary">All
+              articles</a>
+      </div>
+    </div>
+
+{% endblock %}
